@@ -1,0 +1,18 @@
+html {
+    color-scheme: dark;
+}
+body {
+    text-align: center;
+}
+h1 {
+    font-size: 4vw;
+}
+h2 {
+    font-size: 2vw;
+}
+button {
+    background-color: blanchedalmond;
+    color: black;
+    padding: 1vw;
+    width: 12vw;
+}

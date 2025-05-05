@@ -1,0 +1,14 @@
+@font-face {
+    font-family: DEMON;
+    src: url("../../img/black_demon/Black\ Demon.otf");
+}
+body{
+    min-height: 100vh;
+    background-color: black;
+    text-align: center;
+}
+p{
+    font-size: 15vw;
+    font-family: DEMON;
+    margin: 0;
+}

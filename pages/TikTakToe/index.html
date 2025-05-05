@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTakToe</title>
+    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="headline_img" src="./vintage_border.png">
+    <h1 id="headline">TikTakToe</h1>
+    <h1 id="winner_display"></h1>
+    <h1 id="player1_text">Player 1</h1>
+    <h1 id="player2_text">Player 2</h1>
+    <input id="player1_colour" placeholder="Color 1"  type="color">
+    <input id="player2_colour" placeholder="Color 2"  type="color" style="transform: rotate(180deg);">
+    <img id="score_img1" src="./vintage_border2.png">
+    <img id="score_img2" src="./vintage_border2.png">
+    <h1  id="player1_score">0</h1>
+    <h1 id="player2_score">0</h1>
+    <br>
+    <button type="submit" id="submit_button" onclick="hasColor()">PLAY</button>
+    <button type="reset" id="reset_button" onclick="resetGame()">RESET</button>
+    <img src="./img.png" id="winning_img" width="300vw">
+    <div id="matrix">
+      
+    </div>
+</body>
+</html>

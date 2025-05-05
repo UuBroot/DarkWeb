@@ -1,0 +1,92 @@
+#body{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+
+    animation-name: Placeholder;
+    animation-duration: 100ms;
+    animation-iteration-count: infinite;
+}
+#daFunny{
+    opacity: 0;
+}
+h1{
+    font-size: 2.5em;
+}
+.clickable{
+    cursor: pointer;
+}
+
+img{
+    width: 30vw;
+    height: 40vh;
+}
+
+#main{
+    margin-top: 10%;
+}
+
+.youCake{
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#jumpscare{
+    width: 0%;
+    display: none;
+    animation-name: Placeholder;
+    animation-duration: 1s;
+    position: absolute;
+    top: 0vh;
+}
+
+.killButton{
+    width: 30vw;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    transition: text-decoration 1s;
+}
+.killButton:hover{
+    text-decoration: underline;
+    transition: text-decoration 1s;
+    text-decoration-color: red;
+    cursor: pointer;
+}
+
+#the_holy{
+    background-color: white;
+    animation-name: holyness;
+    animation-duration: 4s;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+#the_heaven{
+    color: black; 
+    font-size: 8em; 
+    margin: 0;
+
+    animation-name: holyness;
+    animation-duration: 1s;
+}
+
+@keyframes jumpscare{
+    0%{width: 0%; height: 0}
+    100%{width: 130vw; height: 130vh}
+}
+@keyframes backgroundKiller{
+    0%  {background-color: yellow}
+    33% {background-color: red;}
+    66% {background-color: white;}
+    100%{background-color: darkblue;}
+}
+@keyframes holyness{
+    0%  {opacity: 0}
+    100%{opacity: 1}
+}

@@ -1,0 +1,23 @@
+html {
+    color-scheme: dark;
+    background-color: black;
+    color: white;
+}
+h1 {
+    font-size: 8vw;
+    color: blue;
+}
+header {
+    text-align: center;
+    border: 10px solid blue;
+}
+h2 {
+    margin-top: 14vh;
+    text-decoration: underline;
+}
+iframe {
+    margin: 1vw;
+}
+main {
+    text-align: center;
+}

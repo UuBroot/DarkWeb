@@ -1,0 +1,18 @@
+html {
+    color-scheme: dark;
+}
+
+body {
+    text-align: center;
+    background-image: url("./bone.gif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    cursor: pointer;
+    width: 30vw;
+    font-size: 5vw;
+    color: cornsilk;
+}

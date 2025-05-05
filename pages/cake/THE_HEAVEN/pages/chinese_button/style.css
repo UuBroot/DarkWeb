@@ -1,0 +1,19 @@
+html {
+    color-scheme: dark;
+}
+
+body {
+    text-align: center;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+button {
+    background-color: red;
+    color: darkred;
+    text-align: center;
+    width: 40vw;
+    height: 60vw;
+    font-size: 8vw;
+}

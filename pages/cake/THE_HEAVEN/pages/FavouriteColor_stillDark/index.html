@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#000000</title>
+</head>
+
+<style>
+    html {
+        color-scheme: dark;
+        background-color: black;
+        color: white;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<script>
+    function submitColor() {
+        console.log(document.getElementById("favColor").value);
+
+
+        if (document.getElementById("favColor").value == "#ffffff") {
+            document.getElementById("main").innerHTML = `
+                <div class="center">
+                    <img src="ProudHitler.jpg" title="Picture of a proud Hitler" alt="Picture of a proud Hitler">
+                </div>
+                <br><br><br>
+                <div class="center">
+                    <button onclick="location.reload()">Back</button>
+                </div>
+            `
+        } else if (document.getElementById("favColor").value == "#000000") {
+            document.getElementById("main").innerHTML = `
+                <div class="center">
+                    <video autoplay src="GigaNigga.mp4" alt="Giga Nigga" title="Giga Nigga"></video>
+                </div>
+                <br><br><br>
+                <div class="center">
+                    <button onclick="location.reload()">Back</button>
+                </div>
+            `
+        } else if(document.getElementById("favColor").value == "#ffff00") {
+            document.getElementById("main").innerHTML = `
+                <div class="center">
+                    <video autoplay src="Minions.mp4" alt="911" title="911"></video>
+                </div>
+                <br><br><br>
+                <div class="center">
+                    <button onclick="location.reload()">Back</button>
+                </div>
+            `
+        } else if(document.getElementById("favColor").value == "#ff0000") {
+            var audio = new Audio("https://www.myinstants.com/media/sounds/record-online-voice-recorder_kIwejRI.mp3");
+            audio.play();
+            document.getElementById("main").innerHTML = `
+                <div class="center">
+                    <img src="https://media1.giphy.com/media/li6fUAPIbMhpwDcvEN/giphy.gif" title="AMOGUS" alt="AMOGUS">
+                </div>
+                <br><br><br>
+                <div class="center">
+                    <button onclick="location.reload()">Back</button>
+                </div>
+            `
+        } else {
+            document.getElementById("main").innerHTML = `
+            <h1>OK.</h1>
+            <br><br><br>
+                <div class="center">
+                    <button onclick="location.reload()">Back</button>
+                </div>
+            `
+        }
+
+    }
+</script>
+
+<body>
+    <main id="main">
+
+        <h1>What's your favourite Color?</h1>
+
+        <div class="center">
+            <input type="color" list="presets" id="favColor"></label>
+            <datalist id="presets">
+                <option value="#000000">Black</option>
+                <option value="#ffffff">White</option>
+                <option value="#ffff00">Yellow</option>
+                <option value="#ff0000">Red</option>
+            </datalist>
+            <button onclick="submitColor()">Done</button>
+        </div>
+    </main>
+</body>
+
+</html>

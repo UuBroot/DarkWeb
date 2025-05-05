@@ -1,0 +1,72 @@
+html {
+    color-scheme: dark;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 400%;
+    margin-bottom: 0%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 200%;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.flexItem {
+    width: 33.3%;
+}
+
+.shopItem {
+    width: 100%;
+    border: #ffffff 5px solid;
+    border-radius: 3px;
+    border-collapse: collapse;
+    position: relative;
+    z-index: 0;
+    transform: scale(100%);
+    transition: transform 0.2s ease-out;
+}
+
+.shopItem:hover {
+    transform: scale(120%);
+    z-index: 5;
+    cursor: pointer;
+}
+
+.expandButton {
+    margin-top: 3%;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 400%;
+    cursor: pointer;
+    position: relative;
+}
+
+.expandButton:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #ffffff;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.expandButton:hover:after {
+    transform: scaleX(1);
+}
