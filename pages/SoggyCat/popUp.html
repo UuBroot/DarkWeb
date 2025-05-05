@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP</title>
+</head>
+
+<style>
+    html {
+        color-scheme: dark;
+        background-color: black;
+        color: white;
+    }
+
+    h1, h2, h3{
+        text-align: center;
+    }
+</style>
+
+<script>
+    function no() {
+        var audio = new Audio("NotAnOption.mp3");
+        audio.play();
+        document.getElementById("no").remove();
+    }
+</script>
+
+<body>
+
+    <h1>We have your Browsing Information</h1>
+    <h2>(We know your dark secret)</h2>
+
+    <br><br><br>
+    <h2>Do you wanna bribe us?</h2>
+    <div style="display: flex; justify-content: center; align-items: center;">
+       <button style="margin: 3%;" onclick='window.open("../BlackMarket/donate.html", "_self")'>YES</button> 
+       <button id="no" style="margin: 3%;" onclick="no()">NO</button>
+    </div>
+    
+
+    <img width="475px" src="nailman.png" alt="nailman">
+
+</body>
+
+</html>
