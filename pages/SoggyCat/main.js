@@ -159,7 +159,7 @@ function showPussy() {
   }
 }
 function bribe() {
-  audio.pause().catch((e) => console.error("Autoplay blocked:", e));
+  audio.pause();
 
   window.location.href = "./popUp.html";
 
