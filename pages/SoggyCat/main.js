@@ -159,13 +159,10 @@ function showPussy() {
   }
 }
 function bribe() {
-  popupWindow = window.open(
-    "popUp.html",
-    "popUpWindow",
-    "height=700,width=500,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes",
-  );
-  audio.pause();
+  audio.pause().catch((e) => console.error("Autoplay blocked:", e));
+
+  window.location.href = "./popUp.html";
 
   let audio2 = new Audio("./ominous.mp3");
-  audio2.play();
+  audio2.play().catch((e) => console.error("Autoplay blocked:", e));
 }
